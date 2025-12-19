@@ -1,17 +1,15 @@
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 import { Card } from '../_components/Card'; // Importa o novo componente Card
 import { FaSpa, FaStar, FaHeart } from 'react-icons/fa'; // Exemplo de ícones, você pode instalar 'react-icons'
-import { Header } from '../_components/Header';
 
 export default function Services() {
   return (
     <>
-      <Header />
       <section id="services" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-white to-purple-50 text-neutral-800 pt-20">
         
         <div className="relative z-10 flex flex-col items-center justify-center px-4 py-16">
           <h2 className="text-5xl font-bold text-neutral-800 mb-12">
-            Our Services
+            Nossos Serviços
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card

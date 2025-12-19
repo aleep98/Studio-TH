@@ -7,19 +7,31 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsOpen(false);
+  };
+
   const navLinks = [
     { href: '#home', label: 'Home' },
     { href: '#services', label: 'Serviços' },
+    { href: '#gallery', label: 'Galeria' },
     { href: '#about', label: 'Sobre' },
     { href: '#contact', label: 'Contato' },
   ];
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md shadow-md">
+    <nav className="bg-white/80 backdrop-blur-md shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a id='logo' href="#home" className="text-2xl font-bold text-pink-600 ">
+            <a id='logo' href="#home" onClick={(e) => handleScroll(e, '#home')} className="text-2xl font-bold text-pink-600 font-name">
+              Thainá Roberta
             </a>
           </div>
           <div className="hidden md:block">
@@ -28,6 +40,7 @@ export const Navbar: React.FC = () => {
                 <a
                   key={link.href}
                   href={link.href}
+                  onClick={(e) => handleScroll(e, link.href)}
                   className="text-gray-700 hover:bg-pink-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   {link.label}
@@ -37,7 +50,7 @@ export const Navbar: React.FC = () => {
           </div>
           <div className="hidden md:block">
             <Button variant="primary" size="medium">
-              <a href="#schedule">Agendar</a>
+              <a href="#schedule" onClick={(e) => handleScroll(e, '#schedule')}>Agendar</a>
             </Button>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -62,7 +75,7 @@ export const Navbar: React.FC = () => {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleScroll(e, link.href)}
                 className="text-gray-700 hover:bg-pink-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors"
               >
                 {link.label}
@@ -72,7 +85,7 @@ export const Navbar: React.FC = () => {
           <div className="pt-4 pb-3 border-t border-gray-200">
             <div className="flex items-center px-5">
               <Button variant="primary" size="medium" onClick={() => setIsOpen(false)}>
-                <a href="#schedule">Agendar</a>
+                <a href="#schedule" onClick={(e) => handleScroll(e, '#schedule')}>Agendar</a>
               </Button>
             </div>
           </div>

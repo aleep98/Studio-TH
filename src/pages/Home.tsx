@@ -14,8 +14,9 @@ export default function Home() {
           </div>
 
             <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
-                <span className='text-4xl mb-5 font-studio tracking-logo uppercase text-gray-400'>Studio</span>
-                <h1 className="font-name font-normal text-5xl sm:text-6xl lg:text-7xl mb-6 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Thainá Roberta</h1>
+                <span id="title1" className='text-4xl mb-5 font-studio tracking-logo uppercase text-gray-400'>Studio</span>
+               
+                <h1 className="font-name mb-6 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Thainá Roberta</h1>
                 <p id="subTitle" className="text-sm mb-8 text-gray-800 max-w-2xl">
                   Transformando a beleza com precisão e elegância.
                 </p>

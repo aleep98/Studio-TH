@@ -31,6 +31,11 @@ h1{
   font-size: 8rem;
 }
 
+#title1{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+}
+
 #studio{
   font-family: 'Tangerine', serif;
   font-size: 4rem;

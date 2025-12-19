@@ -10,7 +10,7 @@ export default function Services() {
           <h2 className="text-4xl font-bold text-neutral-800 mb-12">
             Nossos Serviços
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-col md:flex-row lg:flex-row gap-8">
             <Card
               title="Extensão de Cílios"
               description="Realce seu olhar com técnicas avançadas de extensão de cílios, personalizadas para você."
@@ -21,11 +21,11 @@ export default function Services() {
               description="Sobrancelhas perfeitamente desenhadas para harmonizar com seu rosto e expressar sua beleza."
               icon={<FaStar />}
             />
-            <Card
+            {/* <Card
               title="Lash Lifting"
               description="Curvatura e volume naturais para seus cílios, com um efeito duradouro e sem manutenção diária."
               icon={<FaHeart />}
-            />
+            /> */}
           </div>
         </div>
       </section>

@@ -5,7 +5,7 @@ import About from '../pages/About';
 import Services from '../pages/Services';
 import Gallery from '../pages/Gallery';
 
-export default function GalleryPage() {
+export default function Page() {
   return (
     <>
       <Header />

@@ -11,17 +11,14 @@ export const Navbar: React.FC = () => {
   const pathname = usePathname();
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
-    // Se for um link de âncora (começa com /#)
     if (href.startsWith('/#')) {
       const targetId = href.replace('/#', '');
       const element = document.getElementById(targetId);
       
-      // Se estivermos na página inicial e o elemento existir, fazemos o scroll suave
       if (pathname === '/' && element) {
         e.preventDefault();
         element.scrollIntoView({ behavior: 'smooth' });
       }
-      // Caso contrário, deixamos o Link do Next.js fazer a navegação padrão para a página inicial com a âncora
     }
     setIsOpen(false);
   };
@@ -65,7 +62,7 @@ export const Navbar: React.FC = () => {
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">Abrir Menu</span>
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>

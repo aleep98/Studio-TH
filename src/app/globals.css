@@ -35,3 +35,17 @@ h1{
   font-family: 'Cinzel', serif;
   font-size: 1.25rem;
 }
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #db2777 !important; /* Cor rosa/pink do seu tema */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #db2777 !important; /* Cor rosa/pink do seu tema */
+}

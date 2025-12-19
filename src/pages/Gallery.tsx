@@ -1,7 +1,15 @@
+"use client";
+
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function Gallery() {
-  // Substitua estes caminhos pelas imagens da sua pasta `public/gallery`
   const images = [
     '/DesignDeSobrancelha-Henna.jpeg',
     '/EfeitoGatinho.jpeg',
@@ -10,20 +18,42 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-br from-pink-50 via-white to-purple-50">
-      <div className="container mx-auto px-4">
+    <section id="gallery" className="py-20 min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 pt-20">
+      <div className="container mx-auto px-4 text-center">
         <h2 className="text-5xl font-bold text-center text-neutral-800 mb-4">
         Galeria
         </h2>
         <p className="text-center text-lg text-neutral-600 mb-12 max-w-3xl mx-auto">
           Inspire-se com alguns dos nossos trabalhos e veja a transformação que podemos criar para o seu olhar.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols- lg:grid-cols-4 gap-8">
-          {images.map((image, index) => (
-            <div key={index} className="group overflow-hidden rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2x1 cursor-pointer">
-              <Image src={image} alt={`Trabalho realizado ${index + 1}`} width={300} height={200} className="w-full h-auto object-cover" />
-            </div>
-          ))}
+        <div className="max-w-4xl mx-auto">
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            loop={true}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            className="mySwiper rounded-2xl shadow-2xl"
+          >
+            {images.map((image, index) => (
+              <SwiperSlide key={index}>
+                <div className="aspect-w-16 aspect-h-9">
+                  <Image 
+                    src={image} 
+                    alt={`Trabalho realizado ${index + 1}`} 
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>

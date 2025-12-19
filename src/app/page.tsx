@@ -1,17 +1,17 @@
-import HomePage from '../pages/Home';
+import { Header } from '../_components/Header';
+import Home from '../pages/Home';
+import About from '../pages/About';
 import Services from '../pages/Services';
 import Gallery from '../pages/Gallery';
-import About from '../pages/About';
-import { Header } from '../_components/Header';
 
-export default function Home() {
+export default function GalleryPage() {
   return (
-    <div className='min-h-screen'>
+    <>
       <Header />
-      <HomePage/>
-      <Services/>
+      <Home />
+      <Services />
       <Gallery />
       <About />
-    </div>
+    </>
   );
 }

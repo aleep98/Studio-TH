@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #ffffffff;
   --foreground: #171717;
 }
 
@@ -29,4 +29,9 @@ h1{
   font-family: 'Tangerine', serif;
   font-weight: 700;
   font-size: 8rem;
+}
+
+#subTitle {
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
 }

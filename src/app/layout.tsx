@@ -3,7 +3,7 @@ import './globals.css';
 import { cinzel, tangerine, cormorant } from './fonts';
 
 export const metadata: Metadata = {
-  title: "Th Studio",
+  title: "Studio Thainá Roberta - Extensão de Cílios e Design de Sobrancelhas",
   description: "Studio de extensão de cílios Thainá Roberta",
 };
 

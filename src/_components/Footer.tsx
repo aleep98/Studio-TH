@@ -20,8 +20,8 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-center gap-3">
                 <FaWhatsapp className="text-pink-500 text-xl flex-shrink-0" />
-                <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors">
-                  (14) 99999-9999
+                <a href={`https://wa.me/${process.env.NEXT_PUBLIC_CONTACT_PHONE}`} target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors">
+                  (14) 9 8814-6146
                 </a>
               </li>
               <li className="flex items-center gap-3">

@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
               <li className="flex items-center gap-3">
                 <FaWhatsapp className="text-pink-500 text-xl flex-shrink-0" />
                 <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors">
-                  (11) 99999-9999
+                  (14) 99999-9999
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -33,8 +33,8 @@ export const Footer: React.FC = () => {
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-pink-500 text-xl flex-shrink-0 mt-1" />
                 <span>
-                  Rua Exemplo, 123 - Centro<br />
-                  São Paulo - SP
+                  José Carlos Tirolo, 190<br />
+                  Bocaina - São Paulo
                 </span>
               </li>
             </ul>

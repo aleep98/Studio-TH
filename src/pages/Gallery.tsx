@@ -64,7 +64,6 @@ export default function Gallery() {
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
                 <div className="flex flex-col md:flex-row items-center gap-6 w-full min-h-[420px] md:h-[500px] rounded-2xl overflow-hidden bg-zinc-300/65 p-4 md:p-8">
-                  {/* Imagem */}
                   <div className="relative w-full md:w-1/2 h-[260px] md:h-full rounded-xl overflow-hidden">
                     <Image
                       src={slide.src}
@@ -75,7 +74,6 @@ export default function Gallery() {
                     />
                   </div>
 
-                  {/* Texto */}
                   <div className="w-full md:w-1/2 text-center md:text-left">
                     <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
                       {slide.title}

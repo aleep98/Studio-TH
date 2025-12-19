@@ -48,9 +48,9 @@ h1{
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #db2777 !important; /* Cor rosa/pink do seu tema */
+  color: #db2777 !important; 
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #db2777 !important; /* Cor rosa/pink do seu tema */
+  background-color: #db2777 !important; 
 }

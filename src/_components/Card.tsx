@@ -3,8 +3,8 @@ import React from 'react';
 interface CardProps {
   title: string;
   description: string;
-  icon?: React.ReactNode; // Pode ser um componente de ícone ou SVG
-  imageSrc?: string; // URL da imagem, se preferir imagem em vez de ícone
+  icon?: React.ReactNode; 
+  imageSrc?: string; 
 }
 
 export const Card: React.FC<CardProps> = ({ title, description, icon, imageSrc }) => {

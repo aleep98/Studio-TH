@@ -1,6 +1,5 @@
-import { ImageWithFallback } from '../figma/ImageWithFallback';
-import { Card } from '../_components/Card'; // Importa o novo componente Card
-import { FaSpa, FaStar, FaHeart } from 'react-icons/fa'; // Exemplo de ícones, você pode instalar 'react-icons'
+import { Card } from '../_components/Card'; 
+import { FaSpa, FaStar, FaHeart } from 'react-icons/fa'; 
 
 export default function Services() {
   return (

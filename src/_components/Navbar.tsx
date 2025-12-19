@@ -5,7 +5,6 @@ import { Button } from './Button';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Image from 'next/image';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

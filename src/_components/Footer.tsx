@@ -11,7 +11,6 @@ export const Footer: React.FC = () => {
     <footer id="contact" className="bg-neutral-900 text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Informações do Studio */}
           <div className="space-y-4">
             <h3
               id="studio"
@@ -25,7 +24,6 @@ export const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* Contato */}
           <div className="space-y-4">
             <h4 className="text-xl font-semibold text-pink-50">Contato</h4>
             <ul className="space-y-3 text-gray-400">
@@ -59,7 +57,6 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Redes Sociais e Horários */}
           <div className="space-y-4">
             <h4 className="text-xl font-semibold text-pink-50">Siga-nos</h4>
             <div className="flex gap-4 mb-6">

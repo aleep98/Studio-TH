@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
                 <FaInstagram size={20} />
               </a>
               <a
-                href="https://wa.me/5500000000000"
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_CONTACT_PHONE}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-neutral-800 p-3 rounded-full text-gray-400 hover:bg-green-600 hover:text-white transition-all duration-300"
@@ -66,8 +66,8 @@ export const Footer: React.FC = () => {
             <div>
                 <h5 className="text-sm font-semibold text-white mb-2">Horário de Atendimento</h5>
                 <p className="text-gray-400 text-sm">
-                Seg - Sex: 09:00 - 19:00<br />
-                Sáb: 09:00 - 14:00
+                Seg - Sex: 18:00 - 22:00<br />
+                Sáb: 09:00 - 16:00
                 </p>
             </div>
           </div>

@@ -19,8 +19,7 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold text-pink-600 font-name">
-              Thainá Roberta
+            <a id='logo' href="#home" className="text-2xl font-bold text-pink-600 ">
             </a>
           </div>
           <div className="hidden md:block">
@@ -56,7 +55,6 @@ export const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">

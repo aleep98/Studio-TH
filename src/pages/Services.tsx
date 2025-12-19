@@ -8,13 +8,7 @@ export default function Services() {
     <>
       <Header />
       <section id="services" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-white to-purple-50 text-neutral-800 pt-20">
-        <div className="absolute inset-0 z-0">
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1674049406467-824ea37c7184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxleWVsYXNoJTIwZXh0ZW5zaW9ucyUyMGJlYXR5fGVufDF8fHx8MTc2NjA0NzUxNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Beautiful eyelash extensions"
-            className="w-full h-full object-cover opacity-40"
-          />
-        </div>
+        
         <div className="relative z-10 flex flex-col items-center justify-center px-4 py-16">
           <h2 className="text-5xl font-bold text-neutral-800 mb-12">
             Our Services

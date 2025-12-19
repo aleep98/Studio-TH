@@ -40,15 +40,14 @@ export const Footer: React.FC = () => {
                   (14) 9 8814-6146
                 </a>
               </li>
-              <li className="flex items-center gap-3">
+              {/* <li className="flex items-center gap-3">
                 <FaEnvelope className="text-pink-500 text-xl flex-shrink-0" />
                 <a
                   href="mailto:contato@thainaroberta.com"
                   className="hover:text-pink-400 transition-colors"
                 >
-                  contato@thainaroberta.com
                 </a>
-              </li>
+              </li> */}
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-pink-500 text-xl flex-shrink-0 mt-1" />
                 <span>

@@ -54,7 +54,7 @@ export const Navbar: React.FC = () => {
           </div>
           <div className="hidden md:block">
             <Button variant="primary" size="medium">
-              <Link href="/#schedule" onClick={(e) => handleScroll(e, '/#schedule')}>Agendar</Link>
+              <Link href={`https://wa.me/${process.env.NEXT_PUBLIC_CONTACT_PHONE}`} onClick={(e) => handleScroll(e, '/#schedule')}>Agendar</Link>
             </Button>
           </div>
           <div className="-mr-2 flex md:hidden">

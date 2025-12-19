@@ -4,10 +4,10 @@ import { FaSpa, FaStar, FaHeart } from 'react-icons/fa';
 export default function Services() {
   return (
     <>
-      <section id="services" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-white to-purple-50 text-neutral-800 pt-20">
+      <section id="services" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-white to-purple-50 text-neutral-800 pt-10 py-16">
         
         <div className="relative z-10 flex flex-col items-center justify-center px-4 py-16">
-          <h2 className="text-5xl font-bold text-neutral-800 mb-12">
+          <h2 className="text-4xl font-bold text-neutral-800 mb-12">
             Nossos Serviços
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

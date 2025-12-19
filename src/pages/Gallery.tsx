@@ -37,10 +37,10 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="py-20 min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 pt-20"
+      className="py-10 min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 pt-10"
     >
       <div className="container mx-auto px-6 sm:px-8 text-center">
-        <h2 className="text-5xl font-bold text-center text-neutral-800 mb-4">
+        <h2 className="text-3xl font-bold text-center text-neutral-800 mb-4">
           Galeria
         </h2>
         <p className="text-center text-lg text-neutral-600 mb-12 max-w-3xl mx-auto">
@@ -64,7 +64,7 @@ export default function Gallery() {
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
                 <div className="flex flex-col md:flex-row items-center gap-6 w-full min-h-[420px] md:h-[500px] rounded-2xl overflow-hidden bg-zinc-300/65 p-4 md:p-8">
-                  <div className="relative w-full md:w-1/2 h-[260px] md:h-full rounded-xl overflow-hidden">
+                  <div className="relative w-full md:w-1/2 h-[500px] md:h-full rounded-xl overflow-hidden">
                     <Image
                       src={slide.src}
                       alt={slide.title}

@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white text-neutral-800">
+    <section id="about" className="pt-3 py-10 bg-white text-neutral-800">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="lg:w-1/2 order-2 lg:order-1">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-center lg:text-left">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center lg:text-left">
               Sobre Nós
             </h2>
             <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
@@ -30,7 +30,7 @@ export default function About() {
             </p>
             <div className="text-center lg:text-left">
               <Button variant="primary" size="large">
-                <a href="#schedule" className="font-semibold">
+                <a href={`https://wa.me/${process.env.NEXT_PUBLIC_CONTACT_PHONE}`} className="font-semibold">
                   Agende seu horário
                 </a>
               </Button>

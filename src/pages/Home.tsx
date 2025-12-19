@@ -1,5 +1,4 @@
 import { ImageWithFallback } from '../figma/ImageWithFallback';
-import { cinzel, tangerine } from '../app/fonts';
 
 export default function Home() {
   return (

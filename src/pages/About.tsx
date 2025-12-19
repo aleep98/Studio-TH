@@ -37,9 +37,9 @@ export default function About() {
             </div>
           </div>
           <div className="lg:w-1/2 order-1 lg:order-2">
-            <div className="rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] relative">
+            <div className="rounded-2xl overflow-hidden shadow-2xl aspect-[5/5] relative">
               <Image
-                src="/logo.png"
+                src="/thainá.png"
                 alt="Thainá Roberta, especialista em cílios e sobrancelhas"
                 fill
                 className="object-cover transform transition-transform duration-500 hover:scale-110"

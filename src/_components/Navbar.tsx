@@ -5,6 +5,7 @@ import { Button } from './Button';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,10 @@ export const Navbar: React.FC = () => {
   };
 
   const navLinks = [
+    { href: '/#home', label: 'Home' },
+    { href: '/#services', label: 'Serviços' },
+    { href: '/#gallery', label: 'Galeria' },
+    { href: '/#about', label: 'Sobre' },
     { href: '/#contact', label: 'Contato' },
   ];
 
@@ -32,7 +37,6 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-           
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
